@@ -12,8 +12,8 @@ jobs:
     # environment: testing
     env:
       MONGODB_CLUSTER_ADDRESS: test-project.tam4g1s.mongodb.net
-      MONGODB_USERNAME: stalin
-      MONGODB_PASSWORD: Sachin321
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       MONGODB_DB_NAME: gha-demo
       PORT: 8080
 
