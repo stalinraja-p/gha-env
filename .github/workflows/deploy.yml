@@ -9,11 +9,12 @@ env:
   MONGODB_DB_NAME: gha-demo
 jobs:
   test:
-    environment: testing
+    # environment: testing
     env:
       MONGODB_CLUSTER_ADDRESS: test-project.tam4g1s.mongodb.net
       MONGODB_USERNAME: stalin-root
       MONGODB_PASSWORD: Sampras@8525
+      MONGODB_DB_NAME: gha-demo
       PORT: 8080
 
 
